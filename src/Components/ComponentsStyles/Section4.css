@@ -84,21 +84,22 @@
   text-align: left;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .Images {
     width: 100%;
     height: auto;
     display: block;
     margin-top: 20px;
+    padding: 0
   }
   .img {
-    margin: 20px;
+  margin-bottom: 20px;
   }
 
   .case-paragraph-1 {
     font-size: 20px;
     width: 100%;
-    padding: 10px;
+
     color: white;
     text-align: left;
   }
@@ -113,6 +114,39 @@
     font-size: 10px;
     width: 100%;
     padding: 10px;
+    color: white;
+    text-align: left;
+  }
+}
+
+@media (max-width: 385px) {
+  .Images {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    grid-gap: 0
+  }
+
+
+  .case-paragraph-1 {
+    font-size: 20px;
+    width: 100%;
+
+    color: white;
+    text-align: left;
+  }
+  .case-paragraph-2 {
+    font-size: 13px;
+    width: 100%;
+
+    color: white;
+    text-align: left;
+  }
+  .case-paragraph-3 {
+    font-size: 10px;
+    width: 100%;
+
     color: white;
     text-align: left;
   }

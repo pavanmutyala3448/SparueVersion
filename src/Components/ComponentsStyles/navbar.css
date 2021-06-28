@@ -71,7 +71,7 @@
   position:relative;
 left:25%;
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   ul li a {
     font-size: 12px;
     color: black;
@@ -85,7 +85,10 @@ left:25%;
   color: black;
   border-bottom: 4px solid orange;
 }
-@media (max-width: 400px) {
+@media (max-width: 385px) {
+  .Navbar{
+    padding: 0
+  }
   ul li a {
     font-size: 12px;
     color: black;

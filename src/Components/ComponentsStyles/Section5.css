@@ -36,7 +36,7 @@
   width: 400px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .section-5 {
     display: block;
     height: auto;
@@ -57,5 +57,27 @@
   }
   .right-portion img {
     width: 200px;
+  }
+}
+@media (max-width: 385px) {
+  .section-5 {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .client-words {
+    width: 100%;
+    word-break: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+
+  }
+  .left-portion {
+    display: block;
+    width: 100%;
+  }
+  .right-portion img {
+    width: 100px;
   }
 }

@@ -22,7 +22,7 @@
   width: 60%;
   margin-top: 20px;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .section3 {
     width: 100%;
   }
@@ -37,7 +37,7 @@
     margin-top: 20px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 385px) {
   .section3-heading {
     font-size: 15px;
     margin: 1px auto;

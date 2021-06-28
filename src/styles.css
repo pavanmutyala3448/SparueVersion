@@ -8,10 +8,17 @@ button {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.5s;
 }
-
-@media (max-width: 900px) {
+@media(max-width:800px) {
   .app {
-    box-sizing: border-box;
+    width: 100%;
+
   }
+}
+@media(max-width:800px) {
+  .app {
+    width: 100%;
+
+}
 }

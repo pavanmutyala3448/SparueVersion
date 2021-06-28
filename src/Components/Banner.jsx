@@ -12,6 +12,7 @@ const Banner = () => {
         id="carouselExampleCaptions"
         className="carousel slide"
         data-bs-ride="carousel"
+
       >
         <div className="carousel-indicators">
           <button
@@ -19,7 +20,7 @@ const Banner = () => {
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
             className="active"
-            aria-current="true"
+            aria-current="false"
             aria-label="Slide 1"
           ></button>
           <button
@@ -37,12 +38,12 @@ const Banner = () => {
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
+            data-bs-slide-to="3"
             aria-label="Slide 4"
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active">
+          <div className="carousel-item active" data-interval='500'>
             <img src={banner1} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Cloud Infrastructure for Managed cloud services</h5>
@@ -52,7 +53,7 @@ Get started building your cool digital stuff right now
               </p>
             </div>
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" data-interval='500'>
             <img src={banner2} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Cloud Infrastructure for Aws Devops</h5>
@@ -62,7 +63,7 @@ Get started building your cool digital stuff right now
               </p>
             </div>
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" data-interval='500'>
             <img src={banner3} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Cloud Infrastructure for Aws Database migrations</h5>

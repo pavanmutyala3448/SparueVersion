@@ -28,7 +28,7 @@
   font-weight: 600;
   color: white;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .serviceBanner {
     width: 100%;
 
@@ -37,5 +37,15 @@
   .serviceBanner h1 {
     width: 80%;
     font-size: 30px;
+  }
+}
+@media (max-width: 385px) {
+  .serviceBanner {
+    width: 100%;
+    background-size: cover;
+  }
+  .serviceBanner h1 {
+    width: 80%;
+    font-size: 20px;
   }
 }

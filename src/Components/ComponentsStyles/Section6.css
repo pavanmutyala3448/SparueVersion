@@ -29,7 +29,7 @@
 
 .right-section {
   flex-basis: 50%;
-  padding: 20px;
+  
   display: flex;
   align-items: center;
   margin-left: 20px;
@@ -49,7 +49,7 @@
 
 .grid-content {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2,2fr);
 }
 
 .grid-content .form-control {
@@ -62,13 +62,6 @@
   border-radius: 4px;
 }
 
-.grid-content textarea {
-  text-align: left;
-  padding: 10px;
-  width: 100%;
-  margin: 20px;
-  grid: 1/-1;
-}
 
 .grid-content .Message {
   width: 400px;
@@ -85,9 +78,10 @@
   font-size: 14px;
   border-radius: 20px;
   background: #ff7a00;
+  color:#fff
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .contact-info {
     width: 100%;
     display: block;
@@ -97,47 +91,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin:0;
   }
   .grid-content {
     display: block;
   }
   .form .form-heading {
-    text-align: center;
+    text-align: left;
     margin-left: 10px;
     font-weight: 400;
     font-size: 15px;
     opacity: 0.7;
   }
-  .btn {
-    width: 120px;
-    margin: 20px;
-    position: relative;
-    left: 0%;
-    font-size: 14px;
-    border-radius: 20px;
-  }
-}
+  .grid-content .Message {
+    width: 300px;
 
-@media (max-width: 700px) {
-  .contact-info {
-    width: 100%;
-    display: block;
-    background: #dbe6fd;
-  }
-  .right-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .grid-content {
-    display: block;
-  }
-  .form .form-heading {
-    text-align: left;
-    margin-left: 20px;
-    font-weight: 500;
-    font-size: 20px;
-    opacity: 0.7;
   }
   .btn {
     width: 120px;
@@ -149,17 +117,14 @@
   }
 }
 
-@media (max-width: 300px) {
+
+@media (max-width: 385px) {
   .contact-info {
     width: 100%;
     display: block;
     background: #dbe6fd;
   }
-  .right-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .grid-content {
     display: block;
   }
@@ -170,6 +135,12 @@
     font-size: 20px;
     opacity: 0.7;
   }
+  .grid-content .Message {
+    width: 250px;
+    grid: 1/-1;
+    align-items: start;
+    height: 100px;
+  }
   .btn {
     width: 120px;
     margin: 20px;
@@ -177,5 +148,14 @@
     left: 0%;
     font-size: 14px;
     border-radius: 20px;
+  }
+  .left-section p {
+    width: 70%;
+    line-height: 30px;
+    font-weight: 100;
+    text-align: left;
+    color: black;
+    font-size: 10px;
+    margin: 20px auto;
   }
 }

@@ -23,10 +23,10 @@ const Blog = () => {
     <div className=" blog">
       <div className="inner-blog">
         <h1 className="blogger"> Blog </h1>{" "}
-        <div className="row">
+        <div className="row feature-row">
           {" "}
           {img.map((item) => (
-            <div key={item.id} className="col-md-4  col-sm-12 columns">
+            <div key={item.id} className="col-md-4  col-sm-6 columns">
               <img
                 key={item.id}
                 className={item.id}
@@ -36,7 +36,7 @@ const Blog = () => {
             </div>
           ))}{" "}
         </div>{" "}
-        <div className="button">
+        <div className="button-div">
           <button className="feature-button">Explore All</button>
         </div>
       </div>
