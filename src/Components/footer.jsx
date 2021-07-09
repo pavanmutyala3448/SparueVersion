@@ -1,74 +1,61 @@
 import React from "react";
-import { footerLinks1, footerLinks2, footerLinks3 } from "./footerSubLinks";
-import logo from "../sparue.png";
-import "./ComponentsStyles/footer.css";
+
+import "./componentStyles/footer.css";
+
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer-1">
-        <div className="item-1 f-item">
-          <img src={logo} alt="img-logo" />
-          <div className="social-icons">
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-youtube"></i>
-          </div>
-          <div className="Address-bar">
-            <p className="address">
-              Address: Hi-Tech City, Hyderabad, Telangana,India, 500047
-            </p>
-            <p className="mail">Mail: contact@sparue.com</p>
-          </div>
-        </div>
-        <div className="item-2 f-item">
-          <h4 className="heading4">About Us</h4>
-          <div className="nav-list">
-            <ul className="sub-footer">
-              {footerLinks1.map((item) => {
-                return (
-                  <li className="footer-item" key={item.id}>
-                    <a className="footer-link" href="/">
-                      {item.name}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-        <div className="item3 f-item">
-          <h4 className="heading4">Quick Links</h4>
-          <div className="nav-list">
-            <ul className="sub-footer">
-              {footerLinks2.map((item) => {
-                return (
-                  <li className="footer-item" key={item.id}>
-                    <a className="footer-link" href="/">
-                      {item.name}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-        <div className="item-4 f-item">
-          <h4 className="heading4">Services</h4>
-          <div className="nav-list">
-            <ul className="sub-footer">
-              {footerLinks3.map((item) => {
-                return (
-                  <li className="footer-item" key={item.id}>
-                    <a className="footer-link" href="/">
-                      {item.name}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div className='container-fluid Footer'>
+    <div className='Footer-grid container'>
+    <div className='FooterGrid-1'>
+<h1 className='Footer-Heading'>LOGO</h1>
+    </div>
+    <div className='FooterGrid-2'>
+<h4>Quick Links</h4>
+<ul>
+<li>
+<a href='#'>How its Work</a>
+</li>
+<li>
+<a href='#'>Guarantee</a>
+</li>
+<li>
+<a href='#'>Security</a>
+</li>
+<li>
+<a href='#'>Report Bug</a>
+</li>
+<li>
+<a href='#'>Pricing</a>
+</li>
+</ul>
+    </div>
+    <div className='FooterGrid-3'>
+    <h4>About Us</h4>
+    <ul>
+    <li>
+    <a href='#'>About Company</a>
+    </li>
+    <li>
+    <a href='#'>Jobs</a>
+    </li>
+    <li>
+    <a href='#'>Teams</a>
+    </li>
+    <li>
+    <a href='#'>Testimoniala</a>
+    </li>
+    <li>
+    <a href='#'>Blog</a>
+    </li>
+    </ul>
+    </div>
+    <div className='FooterGrid-4'>
+    <h4>Subscribe</h4>
+    <input className='form-control' type='email' placeholder='Enter Email' />
+
+    </div>
+    </div>
+
     </div>
   );
 };

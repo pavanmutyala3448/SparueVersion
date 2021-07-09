@@ -1,24 +1,4 @@
-button {
-  cursor: pointer;
-}
-
-.app {
-  width: 100%;
-  position: relative;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  transition: all 0.5s;
-}
-@media(max-width:800px) {
-  .app {
-    width: 100%;
-
-  }
-}
-@media(max-width:800px) {
-  .app {
-    width: 100%;
-
-}
+.App {
+  /* font-family: "Poppins", sans-serif; */
+  text-align: center;
 }

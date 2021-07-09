@@ -1,0 +1,18 @@
+@media (max-width: 800px) {
+  .pro {
+    width: 12em;
+    height: 10em;
+  }
+}
+@media (max-width: 1400px) {
+  .pro {
+    width: 15em;
+    height: 15em;
+  }
+}
+@media (max-width: 1000px) {
+  .pro {
+    width: 13em;
+    height: 13em;
+  }
+}
